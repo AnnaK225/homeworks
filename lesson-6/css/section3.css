@@ -5,6 +5,7 @@
     background-size: cover;
     position: relative;
     padding-top: 58px;
+
 }
 .axure::after {
     content: '';
@@ -64,22 +65,47 @@
      
 
 .axure__link {
+    margin: 57px auto 0;
     width: 135px;
-    border: 1px solid #ffff;
-    border-color: transparent;
-    font-size: 15px;
-    text-align: center;
-    margin: auto;
-    padding: 11px 26px;
-    }
+            }
 
-
-.link__text {
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    color: #fff;
-    font-family:'Open Sans';
-   
-    
+   .link__text {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: capitalize;
+  padding: 11px 0;
+  border: 1px solid #fff;
+  animation: 1s pulsating-button ease-in-out infinite alternate;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+ z-index: 2;
+     
 }
+
+.link__text:hover {
+    color: rgb(88, 40, 40);
+      
+        
+  }
+
+  @keyframes pulsating-button {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  

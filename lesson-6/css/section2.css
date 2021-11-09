@@ -4,14 +4,16 @@
 }
 .customers-items {
     display: flex;
-    justify-content: space-between;
-     
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 157px;
     
 }
 .customers-item {
     margin-top: 83px;
     
   
+   
 }
 .customers-item__text {
     width: 298px;

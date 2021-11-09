@@ -2,15 +2,18 @@
 @import url("./section2.css");
 @import url("./section3.css");
 @import url("./import-cdn.css");
- 
+@import url("./header.css");
+@import url("./social.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("./footer.css");
+@import url("./modern.css");
+@import url("./contact.css");
     html {
-        font-family: 'Montserrat', 'Open Sans','Raleway', sans-serif;
+        font-family: 'Montserrat', 'Open Sans','Raleway','Roboto', sans-serif;
        
     }
     
- 
-
- * {
+  * {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -41,6 +44,7 @@
     font-size: 36px;
     line-height: 21px;
     text-align:center;
+    font-family:'Raleway';
 }
 
 .card-content {
@@ -87,6 +91,7 @@
 .card-wrap {
     display: flex;
     justify-content: space-between;
+    /* flex-wrap:wrap; */
     margin-right: 23px;
     margin-left: 36px;
 }             
@@ -101,7 +106,13 @@
     margin: auto;
     /* margin-bottom: 46px; */
     text-align: center;
+   
 }
+
+
+.card__img img:hover {
+    color: rgb(219, 34, 34);
+    }
 
 .card__title h3 {
     font-size: 24px;
