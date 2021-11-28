@@ -5,7 +5,8 @@
   background-size: cover;
   position: relative;
   padding-top: 58px;
-  height: 600px;
+  /* height: 600px; */
+ 
 
 }
 .modern-axure::after {
@@ -24,7 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 110px auto 120px 111px;
+    /* padding: 110px auto 120px 111px; */
 
 }
 .modern-logo {
@@ -34,7 +35,7 @@
     width: 129px;
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 60px;
+    font-size: 3.75rem;
     margin-top: 108px;
     color: #fff;
     text-transform: uppercase;
@@ -52,7 +53,7 @@
 }
 .modern__title h2 {
     font-family: 'Raleway';
-    font-size: 36px;
+    font-size: 3rem;
     line-height: 42px;
     font-style: normal;
     color: #fff;
@@ -84,10 +85,11 @@
 }
 .modern-wrap__right {
     background:#fff;
-    width: 370px;
+    max-width: 370px;
     height: 370px;
     z-index: 2;
     border-radius: 8px;
+    overflow: hidden;
    }
 .form-content-item {
     display: flex;
@@ -95,6 +97,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding-left: 58px;
+    padding-right: 58px;
+    
     
 }
 
@@ -103,7 +107,7 @@
    margin-bottom: 44px;
   }
 .form__title h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     font-style: normal;
     line-height: 27px;
@@ -133,12 +137,12 @@
 
 .form__button button {
     width: 371px;
-    height: 53px;
+    height: 58px;
     color: rgb(230, 221, 221);
     background-color:rgb(197, 91, 91);
     line-height: 20px;font-weight: 600;
     font-style: normal;
-    font-size: 15px;
+    font-size: 0.94rem;
     text-align: center;
     text-transform: capitalize;
     margin-top: 40px;
@@ -148,3 +152,25 @@
     cursor: pointer;
 
 }
+@media  (max-width:944px) {
+    .modern-wrap__right {
+        display: block;
+        margin: auto;
+        margin-right: 0;
+        max-width: 100%;
+        
+       
+    }
+        .modern-wrap__left {
+            margin: auto;     
+
+    }
+}
+@media  (max-width:530px) {
+        .modern-wrap__right {
+            display: block;
+        }
+        .modern__title h2 {
+            font-size: 2.2rem;
+        }
+        }    

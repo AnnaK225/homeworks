@@ -14,7 +14,7 @@
     }
 
 .social__title h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Open Sans';
     font-weight: 700;
     line-height: 27px;
@@ -27,7 +27,7 @@
 .social__description {
     width: 365px;
     line-height: 19px;
-    font-size: 14px;
+    font-size: 0.87rem;
     font-style: normal;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -39,7 +39,7 @@
     justify-content: space-between;
     align-items:center;
     /* justify-content: flex-end; */
-    font-size: 30px;
+    font-size: 1.87rem;
     
     
 }
@@ -56,7 +56,23 @@ transition: 0.3s;
 .social-list__item a:hover {
 
     color: rgb(88, 25, 79);
-    font-size: 30px;
+    font-size: 1.87rem;
       }
+
+@media (max-width:965px) {
+    .social-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+    }
+    .social__title {
+        display: block;
+    }
+.social__row {
+    max-width: 100%;
+}
+   
+}
 
   

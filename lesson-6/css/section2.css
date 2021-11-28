@@ -12,12 +12,11 @@
 .customers-item {
     margin-top: 83px;
     
-  
-   
+    
 }
 .customers-item__text {
     width: 298px;
-    font-size: 14px;
+    font-size: 1.12rem;
     font-style: normal;
     font-family:'Raleway';
     text-align: center;
@@ -31,7 +30,7 @@
 .customers-item__text::after {
   
     content: '';
-    border-left: 30px solid transparent;
+    border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid #e2e2e2; 
     position: absolute;
@@ -62,7 +61,7 @@
         
 .name {    
     width: 97px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     line-height: 27px;
     font-weight: 700;
@@ -74,7 +73,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
-    line-height: 19px;
+    line-height: 1.18rem;
     
 
 }

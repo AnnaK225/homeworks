@@ -8,8 +8,11 @@
 @import url("./footer.css");
 @import url("./modern.css");
 @import url("./contact.css");
+@import url("./tab.css");
+@import url("./awesome.css");
+
     html {
-        font-family: 'Montserrat', 'Open Sans','Raleway','Roboto', sans-serif;
+        font-family: 'Montserrat', 'Open Sans','Raleway','Roboto', 'sans-serif';
        
     }
     
@@ -20,103 +23,54 @@
     box-sizing:border-box;
     text-decoration: none;
 }
-.awesome {
-    padding: 54px 0 58px;
-   }
+html {
+    font-size: 16px;
+     width: 100%;
+    height: 100%;
+    max-width: 100%;
+    /* overflow-y: hidden; */
+}
 
-.container { 
-    max-width: 1170px;
-    padding: 0 15px; 
-    margin: auto;
-    padding-bottom: 30px;
+
+
+
+   @media (max-width: 1200px) {
+    html { 
+        font-size: 16px;
     }
-.content {
-    padding: 57px 0 71px;
-    
-}
-.title {
-    margin-bottom: 40px;
-    text-transform: uppercase;
+    .container {
+        max-width: 970px;
 
-}
-.title h2 {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 21px;
-    text-align:center;
-    font-family:'Raleway';
-}
-
-.card-content {
-    width: 370px;
-    padding-bottom: 8px;
-    
-}
-.card__title {
-    margin: auto;
-    margin-bottom: 46px; 
-           }
-
-    
-
-/* .line {
-    width: 170px;
-    border-top: 1px solid #ec7979;
-    text-align: center;
-    margin: 0 auto 39px;
-  } */
-
-.title::after {  
-    content: '';
-    border-top: 1px solid rgb(228, 179, 179);
-    background-position: center;
-    width: 64px;
-    display: block;
-    margin: 34px auto 34px;
-     }
-
-  .description {
-      width: 1169px;
-      margin: auto;
-      margin-bottom: 62px;
-  }
-.description p {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-               }
-   
-.card-wrap {
-    display: flex;
-    justify-content: space-between;
-    /* flex-wrap:wrap; */
-    margin-right: 23px;
-    margin-left: 36px;
-}             
- 
-.card-img {
-      margin-bottom: 39px;
-      
-     }
-
-.card__img img {
-    display: block;
-    margin: auto;
-    /* margin-bottom: 46px; */
-    text-align: center;
-   
-}
-
-
-.card__img img:hover {
-    color: rgb(219, 34, 34);
     }
+}
+@media  (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 750px;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    
+}
 
-.card__title h3 {
-    font-size: 24px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-   }
+@media (max-width: 767px) {
+html {font-size: 12px;
 
+} 
+
+.container   {
+    max-width: 90%;
+}
+}
+
+@media (max-width: 320px) {
+    html {font-size: 10px;
+    
+    } 
+    .container   {
+        max-width: 90%;
+    }
+    }

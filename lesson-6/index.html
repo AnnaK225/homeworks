@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximym-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -40,7 +40,7 @@
              </header>
 
              <section class="modern-axure">
-<div class="container">
+<div class="container" style="position: relative;z-index: 2;">
     <div class="modern-wrap">
         <div class="modern-wrap__left">
             <div class="modern-logo">
@@ -94,13 +94,12 @@
     <section class="social-media">
         <div class="container">
             <div class="social-wrap">
-                 <div class="social__title">
-           <h2>Social Media</h2>
-       
-       <div class="social__description">
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, cum.</p>
-       </div>
+                 <div class="social__row">
+           <h2 class="sohial__title">Social Media</h2>
+                
+           <p class="social__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, cum.</p>
                 </div>
+                
                  <ul class="social__list">
                <li class="social-list__item">
                    <a href="#"><i class="fab fa-facebook"></i></a>
@@ -129,6 +128,39 @@
        </div>
                          
     </section>  
+    <section class="tab">
+        <div class="container__tabs">
+            <div class="tab__wrap">
+                <div class="item__tabs">
+                    <!-- <div class="item-tab1">
+                        <input class="item-tab1__input" id="tab_1" type="radio" name="tabs" checked/>
+                        <label class="item-tab1__label" for="tab_1">tab 1</label>
+                    </div>
+                    <div class="item-tab1">
+                        <input class="item-tab1__input" id="tab_2" type="radio" name="tabs"/>                      <label class="item-tab1__label" for="tab_2">tab 2</label>
+                    </div>
+                    <div class="item-tab1">
+                        <input class="item-tab1__input" id="tab_3" type="radio" name="tabs"/>
+                        <label class="item-tab1__label" for="tab_3">tab 3</label>
+                    </div> -->
+                 
+                </div>
+                <div class="tabs__row">
+                    <div class="tabs__content">
+                           <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                            <p class="tabs__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos distinctio a libero labore harum quibusdam sequi! Provident voluptatem odio veritatis aperiam cumque minus non quibusdam officia ullam amet corrupti alias impedit illum, tempore saepe dolore ex voluptatibus libero quasi labore!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptas possimus. Delectus, eveniet alias. Veritatis ea eos autem? Voluptatum, aliquam?.</p>
+                            <a href="#" class="tabs__link">Download</a>
+                    </div>
+                        <div class="tabs__img">
+                            <img src="./img/Rectangle 111.png">
+                        </div>
+                    </div>
+                                                            
+            </div>
+        </div>
+           
+     </section>
 
     <section class="awesome">
         <div class="container">
@@ -349,7 +381,7 @@
         </section>
 
         <section class="axure">
-            <div class="container">
+            <div class="container" style="position: relative; z-index: 2;">
                 <div class="axure__title">
                     <h2>stylish axure design</h2>
                 </div>
@@ -374,15 +406,15 @@
                <form>
                    <div class="contact__wrap">
                       <div class="form-content__left">
-                        <div class="form-content-item">
+                        <div class="form-content-items">
                             <label for="name" class="form-content__labels">Name</label>
                             <input type="text" id="name" class="form-content__fields">
                         </div>
-                        <div class="form-content-item">
+                        <div class="form-content-items">
                             <label for="mail" class="form-content__labels">Email</label>
                             <input type="email" id="mail" class="form-content__fields">
                         </div>
-                        <div class="form-content-item">
+                        <div class="form-content-items">
                             <label for="password" class="form-content__labels">Password</label>
                             <input type="password" id="password" class="form-content__fields">
                         </div>
@@ -391,15 +423,14 @@
                       <div class="form-content__right">
                           <div class="contact__text">
                                 <label for="message" class="form-content__labels">Message</label>
-                                <textarea name="message" id="message" cols="1" rows="13" class="contact__message">
+                                <textarea name="message" id="message" class="contact__message">
                                 </textarea>
                            </div>
                        </div>
                         
                     </div>
-                    <div class="contact__button">
-                        <button>send message</button>
-                  </div>
+                     <button class="contact__button">send message</button>
+                  
                 </form>
             </div> 
                                
